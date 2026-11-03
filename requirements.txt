@@ -1,0 +1,12 @@
+# Direct dependencies (Python 3.11). Full resolved set: requirements-lock.txt
+#   Install:  python -m venv .venv
+#             .venv\Scripts\python -m pip install -r requirements-lock.txt
+ur_rtde==1.6.5
+httpx==0.28.1
+PyYAML==6.0.3
+pydantic==2.14.2
+ivoryos==1.7.2
+# opentrons 10.x crashes on import under Python < 3.12 (typing.TypedDict in
+# vacuum_module); 9.x drops OT-2 simulation. 8.8.2 simulates both OT-2 and Flex.
+opentrons==8.8.2
+pytest==9.2.0
